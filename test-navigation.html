@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Component Test - Zaviyar Enterprises</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Custom Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'emerald': {
+                            100: '#d1fae5',
+                            700: '#047857',
+                            800: '#065f46',
+                            900: '#064e3b',
+                        },
+                        'gold': {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        },
+                        'cream': '#faf9f6',
+                        'charcoal': '#1f2937',
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-cream text-charcoal">
+    
+    <!-- Navigation Header Component -->
+    <header class="bg-emerald-900 text-cream shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4" aria-label="Main navigation">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center space-x-2" aria-label="Zaviyar Enterprises Home">
+                    <img src="assets/images/logo.svg" alt="Zaviyar Enterprises Logo" class="h-12 w-12">
+                    <span class="text-xl font-bold text-gold-500">Zaviyar Enterprises</span>
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <ul class="hidden md:flex space-x-6 text-sm font-medium">
+                    <li><a href="index.html" class="hover:text-gold-500 transition duration-300 focus:outline-none focus:ring-2 focus:ring-gold-500 rounded px-2 py-1">Home</a></li>
+                    <li><a href="about.html" class="hover:text-gold-500 transition duration-300 focus:outline-none focus:ring-2 focus:ring-gold-500 rounded px-2 py-1">About Us</a></li>
+                    <li><a href="products.html" class="hover:text-gold-500 transition duration-300 focus:outline-none focus:ring-2 focus:ring-gold-500 rounded px-2 py-1">Products</a></li>
+                    <li><a href="milling.html" class="hover:text-gold-500 transition duration-300 focus:outline-none focus:ring-2 focus:ring-gold-500 rounded px-2 py-1">Milling & Processing</a></li>
+                    <li><a href="packaging.html" class="hover:text-gold-500 transition duration-300 focus:outline-none focus:ring-2 focus:ring-gold-500 rounded px-2 py-1">Packaging & Export</a></li>
+                    <li><a href="quality.html" class="hover:text-gold-500 transition duration-300 focus:outline-none focus:ring-2 focus:ring-gold-500 rounded px-2 py-1">Quality Assurance</a></li>
+                    <li><a href="contact.html" class="hover:text-gold-500 transition duration-300 focus:outline-none focus:ring-2 focus:ring-gold-500 rounded px-2 py-1">Contact Us</a></li>
+                </ul>
+                
+                <!-- Mobile Hamburger Button -->
+                <button id="mobile-menu-toggle" 
+                        class="md:hidden focus:outline-none focus:ring-2 focus:ring-gold-500 rounded p-2 min-w-[44px] min-h-[44px] flex items-center justify-center" 
+                        aria-label="Toggle mobile menu" 
+                        aria-expanded="false"
+                        aria-controls="mobile-menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation Menu -->
+            <ul id="mobile-menu" 
+                class="hidden md:hidden mt-4 space-y-2 text-sm font-medium"
+                role="menu"
+                aria-label="Mobile navigation menu">
+                <li role="none"><a href="index.html" class="block py-2 hover:text-gold-500 transition duration-300 focus:outline-none focus:ring-2 focus:ring-gold-500 rounded px-2" role="menuitem">Home</a></li>
+                <li role="none"><a href="about.html" class="block py-2 hover:text-gold-500 transition duration-300 focus:outline-none focus:ring-2 focus:ring-gold-500 rounded px-2" role="menuitem">About Us</a></li>
+                <li role="none"><a href="products.html" class="block py-2 hover:text-gold-500 transition duration-300 focus:outline-none focus:ring-2 focus:ring-gold-500 rounded px-2" role="menuitem">Products</a></li>
+                <li role="none"><a href="milling.html" class="block py-2 hover:text-gold-500 transition duration-300 focus:outline-none focus:ring-2 focus:ring-gold-500 rounded px-2" role="menuitem">Milling & Processing</a></li>
+                <li role="none"><a href="packaging.html" class="block py-2 hover:text-gold-500 transition duration-300 focus:outline-none focus:ring-2 focus:ring-gold-500 rounded px-2" role="menuitem">Packaging & Export</a></li>
+                <li role="none"><a href="quality.html" class="block py-2 hover:text-gold-500 transition duration-300 focus:outline-none focus:ring-2 focus:ring-gold-500 rounded px-2" role="menuitem">Quality Assurance</a></li>
+                <li role="none"><a href="contact.html" class="block py-2 hover:text-gold-500 transition duration-300 focus:outline-none focus:ring-2 focus:ring-gold-500 rounded px-2" role="menuitem">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Test Content -->
+    <main class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-emerald-900 mb-4">Navigation Component Test</h1>
+        
+        <section class="bg-white p-6 rounded-lg shadow-md mb-6">
+            <h2 class="text-xl font-semibold mb-4">Testing Checklist</h2>
+            <ul class="space-y-2 text-sm">
+                <li class="flex items-start">
+                    <span class="text-gold-500 font-bold mr-2">✓</span>
+                    <span><strong>Desktop Navigation:</strong> Links visible on screens ≥768px wide</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-gold-500 font-bold mr-2">✓</span>
+                    <span><strong>Mobile Hamburger Button:</strong> Visible on screens &lt;768px wide</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-gold-500 font-bold mr-2">✓</span>
+                    <span><strong>Mobile Menu Toggle:</strong> Click hamburger to show/hide menu</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-gold-500 font-bold mr-2">✓</span>
+                    <span><strong>ARIA Attributes:</strong> aria-label, aria-expanded, aria-controls present</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-gold-500 font-bold mr-2">✓</span>
+                    <span><strong>Seven Page Links:</strong> Home, About Us, Products, Milling & Processing, Packaging & Export, Quality Assurance, Contact Us</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-gold-500 font-bold mr-2">✓</span>
+                    <span><strong>Semantic HTML5:</strong> header and nav elements used</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-gold-500 font-bold mr-2">✓</span>
+                    <span><strong>Sticky Position:</strong> Navigation stays at top when scrolling</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-gold-500 font-bold mr-2">✓</span>
+                    <span><strong>Keyboard Navigation:</strong> Tab through links, Enter to activate</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-gold-500 font-bold mr-2">✓</span>
+                    <span><strong>Focus Indicators:</strong> Visible ring on focused elements</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-gold-500 font-bold mr-2">✓</span>
+                    <span><strong>Touch Target Size:</strong> Hamburger button meets 44x44px minimum</span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="bg-white p-6 rounded-lg shadow-md mb-6">
+            <h2 class="text-xl font-semibold mb-4">Requirements Validation</h2>
+            <div class="space-y-3 text-sm">
+                <div class="border-l-4 border-emerald-700 pl-4">
+                    <strong class="text-emerald-900">Requirement 1.2:</strong> Navigation menu displays links to all seven pages ✓
+                </div>
+                <div class="border-l-4 border-emerald-700 pl-4">
+                    <strong class="text-emerald-900">Requirement 1.4:</strong> Navigation menu remains accessible on all pages ✓
+                </div>
+                <div class="border-l-4 border-emerald-700 pl-4">
+                    <strong class="text-emerald-900">Requirement 1.6:</strong> SVG logo displayed in navigation header ✓
+                </div>
+                <div class="border-l-4 border-emerald-700 pl-4">
+                    <strong class="text-emerald-900">Requirement 13.5:</strong> ARIA labels for icon-only buttons (hamburger menu) ✓
+                </div>
+            </div>
+        </section>
+
+        <!-- Dummy content to test sticky navigation -->
+        <section class="bg-white p-6 rounded-lg shadow-md mb-6">
+            <h2 class="text-xl font-semibold mb-4">Scroll Test Content</h2>
+            <p class="mb-4">Scroll down to verify the navigation header stays sticky at the top of the viewport.</p>
+            <div class="h-96 bg-gradient-to-b from-cream to-emerald-100 rounded flex items-center justify-center">
+                <p class="text-lg text-emerald-900 font-semibold">Keep scrolling...</p>
+            </div>
+        </section>
+
+        <section class="bg-white p-6 rounded-lg shadow-md mb-6">
+            <h2 class="text-xl font-semibold mb-4">More Scroll Content</h2>
+            <div class="h-96 bg-gradient-to-b from-emerald-100 to-gold-400 rounded flex items-center justify-center">
+                <p class="text-lg text-charcoal font-semibold">Navigation should still be visible at top</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="assets/js/navigation.js"></script>
+    
+    <!-- Validation Script (for testing) -->
+    <script src="validate-navigation.js"></script>
+</body>
+</html>

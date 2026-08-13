@@ -1,0 +1,50 @@
+<!-- Reusable Navigation Header Component -->
+<!-- Requirements: 1.2, 1.4, 1.6, 13.5 -->
+
+<header class="bg-emerald-900 text-cream shadow-lg sticky top-0 z-50">
+    <nav class="container mx-auto px-4 py-4" aria-label="Main navigation">
+        <div class="flex justify-between items-center">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center space-x-2" aria-label="Zaviyar Enterprises Home">
+                <img src="assets/images/logo.svg" alt="Zaviyar Enterprises Logo" class="h-12 w-12">
+                <span class="text-xl font-bold text-gold-500">Zaviyar Enterprises</span>
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <ul class="hidden md:flex space-x-6 text-sm font-medium">
+                <li><a href="index.html" class="hover:text-gold-500 transition duration-300 focus:outline-none focus:ring-2 focus:ring-gold-500 rounded px-2 py-1">Home</a></li>
+                <li><a href="about.html" class="hover:text-gold-500 transition duration-300 focus:outline-none focus:ring-2 focus:ring-gold-500 rounded px-2 py-1">About Us</a></li>
+                <li><a href="products.html" class="hover:text-gold-500 transition duration-300 focus:outline-none focus:ring-2 focus:ring-gold-500 rounded px-2 py-1">Products</a></li>
+                <li><a href="milling.html" class="hover:text-gold-500 transition duration-300 focus:outline-none focus:ring-2 focus:ring-gold-500 rounded px-2 py-1">Milling & Processing</a></li>
+                <li><a href="packaging.html" class="hover:text-gold-500 transition duration-300 focus:outline-none focus:ring-2 focus:ring-gold-500 rounded px-2 py-1">Packaging & Export</a></li>
+                <li><a href="quality.html" class="hover:text-gold-500 transition duration-300 focus:outline-none focus:ring-2 focus:ring-gold-500 rounded px-2 py-1">Quality Assurance</a></li>
+                <li><a href="contact.html" class="hover:text-gold-500 transition duration-300 focus:outline-none focus:ring-2 focus:ring-gold-500 rounded px-2 py-1">Contact Us</a></li>
+            </ul>
+            
+            <!-- Mobile Hamburger Button -->
+            <button id="mobile-menu-toggle" 
+                    class="md:hidden focus:outline-none focus:ring-2 focus:ring-gold-500 rounded p-2 min-w-[44px] min-h-[44px] flex items-center justify-center" 
+                    aria-label="Toggle mobile menu" 
+                    aria-expanded="false"
+                    aria-controls="mobile-menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Mobile Navigation Menu -->
+        <ul id="mobile-menu" 
+            class="hidden md:hidden mt-4 space-y-2 text-sm font-medium"
+            role="menu"
+            aria-label="Mobile navigation menu">
+            <li role="none"><a href="index.html" class="block py-2 hover:text-gold-500 transition duration-300 focus:outline-none focus:ring-2 focus:ring-gold-500 rounded px-2" role="menuitem">Home</a></li>
+            <li role="none"><a href="about.html" class="block py-2 hover:text-gold-500 transition duration-300 focus:outline-none focus:ring-2 focus:ring-gold-500 rounded px-2" role="menuitem">About Us</a></li>
+            <li role="none"><a href="products.html" class="block py-2 hover:text-gold-500 transition duration-300 focus:outline-none focus:ring-2 focus:ring-gold-500 rounded px-2" role="menuitem">Products</a></li>
+            <li role="none"><a href="milling.html" class="block py-2 hover:text-gold-500 transition duration-300 focus:outline-none focus:ring-2 focus:ring-gold-500 rounded px-2" role="menuitem">Milling & Processing</a></li>
+            <li role="none"><a href="packaging.html" class="block py-2 hover:text-gold-500 transition duration-300 focus:outline-none focus:ring-2 focus:ring-gold-500 rounded px-2" role="menuitem">Packaging & Export</a></li>
+            <li role="none"><a href="quality.html" class="block py-2 hover:text-gold-500 transition duration-300 focus:outline-none focus:ring-2 focus:ring-gold-500 rounded px-2" role="menuitem">Quality Assurance</a></li>
+            <li role="none"><a href="contact.html" class="block py-2 hover:text-gold-500 transition duration-300 focus:outline-none focus:ring-2 focus:ring-gold-500 rounded px-2" role="menuitem">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>

@@ -1,0 +1,283 @@
+/* Custom CSS for Zaviyar Enterprises Website */
+/* Requirements: 3.1, 13.4, 15.6 */
+
+/* CSS Custom Properties for Color Palette */
+:root {
+    /* Primary Color - Deep Emerald Green */
+    --emerald-900: #064e3b;
+    --emerald-800: #065f46;
+    --emerald-700: #047857;
+    --emerald-100: #d1fae5;
+    
+    /* Accent Color - Warm Gold/Amber */
+    --gold-600: #d97706;
+    --gold-500: #f59e0b;
+    --gold-400: #fbbf24;
+    
+    /* Background Color - Rice Off-White/Cream */
+    --cream: #faf9f6;
+    --cream-dark: #f5f3ed;
+    
+    /* Text Color - Dark Charcoal */
+    --charcoal: #1f2937;
+    --charcoal-light: #374151;
+    
+    /* Neutral Grays */
+    --gray-100: #f3f4f6;
+    --gray-300: #d1d5db;
+    --gray-400: #9ca3af;
+    --gray-600: #4b5563;
+    --gray-700: #374151;
+}
+
+/* Smooth scrolling behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Body layout to ensure footer stays at bottom */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* Focus visible for keyboard navigation */
+body.keyboard-nav *:focus {
+    outline: 2px solid var(--gold-500);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+/* Remove focus outline for mouse users */
+body:not(.keyboard-nav) *:focus {
+    outline: none;
+}
+
+/* Ensure focus is still visible on form inputs */
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    ring: 2px;
+    ring-color: var(--emerald-900);
+}
+
+/* Screen reader only utility class */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* Make sr-only visible when focused */
+.sr-only.focus\:not-sr-only:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: inherit;
+    margin: inherit;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+}
+
+/* Lazy load image transitions */
+img.lazy {
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+
+img.loaded {
+    opacity: 1;
+}
+
+/* Hero overlay gradient */
+.hero-overlay {
+    background: linear-gradient(135deg, rgba(6, 78, 59, 0.7), rgba(6, 78, 59, 0.5));
+}
+
+/* Consistent transition durations */
+a, button {
+    transition: all 0.3s ease;
+}
+
+/* Hover effects for cards */
+.product-card:hover,
+.quality-badge:hover {
+    transform: translateY(-4px);
+}
+
+/* Custom scrollbar styling (WebKit browsers) */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--cream);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--emerald-700);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--emerald-900);
+}
+
+/* Print styles */
+@media print {
+    .no-print,
+    header,
+    footer,
+    nav,
+    button {
+        display: none !important;
+    }
+    
+    body {
+        color: black;
+        background: white;
+    }
+    
+    a {
+        text-decoration: underline;
+    }
+    
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+}
+
+/* Accessibility: Ensure minimum touch target size on mobile */
+@media (max-width: 768px) {
+    button,
+    a {
+        min-height: 44px;
+        min-width: 44px;
+    }
+}
+
+/* Animation for page elements */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* Gradient text effect for headings (optional enhancement) */
+.gradient-text {
+    background: linear-gradient(135deg, var(--emerald-900), var(--gold-500));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Loading spinner for form submission */
+.spinner {
+    border: 3px solid var(--cream);
+    border-top: 3px solid var(--emerald-900);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Error message styling */
+.error-message {
+    font-size: 0.875rem;
+    color: #dc2626;
+    margin-top: 0.25rem;
+}
+
+/* Success message styling */
+.success-message {
+    background-color: #d1fae5;
+    border: 1px solid #047857;
+    color: #064e3b;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+/* Responsive typography adjustments */
+@media (max-width: 640px) {
+    h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+        line-height: 1.3;
+    }
+    
+    h3 {
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+    
+    p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}
+
+/* Ensure images don't break layout */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Consistent card styling */
+.card {
+    background: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Container max-width for consistent content width */
+.container {
+    max-width: 1280px;
+}
+
+/* Add spacing between sections */
+section + section {
+    margin-top: 0;
+}
+
+/* Ensure footer stays at bottom even with minimal content */
+footer {
+    margin-top: auto;
+}

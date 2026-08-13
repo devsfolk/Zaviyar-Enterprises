@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quality Assurance at Zaviyar Enterprises. HACCP and ISO certified with rigorous testing, hygienic processing, and food safety standards.">
+    <meta name="keywords" content="quality assurance, HACCP certified, ISO certified, food safety, lab testing, hygienic processing">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Quality Assurance - Zaviyar Enterprises">
+    <meta property="og:description" content="Rigorous quality control and food safety standards ensuring premium rice products.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zaviyarenterprises.com/quality.html">
+    <meta property="og:image" content="assets/images/quality-lab-testing.jpg">
+    
+    <title>Quality Assurance - Zaviyar Enterprises</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'emerald': { 100: '#d1fae5', 700: '#047857', 800: '#065f46', 900: '#064e3b' },
+                        'gold': { 400: '#fbbf24', 500: '#f59e0b', 600: '#d97706' },
+                        'cream': '#faf9f6',
+                        'charcoal': '#1f2937',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="font-sans text-charcoal bg-cream">
+    <!-- Skip Link -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-gold-500 focus:text-charcoal focus:rounded">Skip to main content</a>
+
+    <!-- Navigation -->
+    <header class="bg-emerald-900 text-cream shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4" aria-label="Main navigation">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="flex items-center space-x-2">
+                    <img src="assets/images/logo.svg" alt="Zaviyar Enterprises Logo" class="h-12 w-12">
+                    <span class="text-xl font-bold text-gold-500">Zaviyar Enterprises</span>
+                </a>
+                <ul class="hidden md:flex space-x-6 text-sm font-medium">
+                    <li><a href="index.html" class="hover:text-gold-500 transition duration-300 focus:outline-none focus:ring-2 focus:ring-gold-500 rounded px-2 py-1">Home</a></li>
+                    <li><a href="about.html" class="hover:text-gold-500 transition duration-300 focus:outline-none focus:ring-2 focus:ring-gold-500 rounded px-2 py-1">About Us</a></li>
+                    <li><a href="products.html" class="hover:text-gold-500 transition duration-300 focus:outline-none focus:ring-2 focus:ring-gold-500 rounded px-2 py-1">Products</a></li>
+                    <li><a href="milling.html" class="hover:text-gold-500 transition duration-300 focus:outline-none focus:ring-2 focus:ring-gold-500 rounded px-2 py-1">Milling & Processing</a></li>
+                    <li><a href="packaging.html" class="hover:text-gold-500 transition duration-300 focus:outline-none focus:ring-2 focus:ring-gold-500 rounded px-2 py-1">Packaging & Export</a></li>
+                    <li><a href="quality.html" class="text-gold-500 font-bold transition duration-300 focus:outline-none focus:ring-2 focus:ring-gold-500 rounded px-2 py-1" aria-current="page">Quality Assurance</a></li>
+                    <li><a href="contact.html" class="hover:text-gold-500 transition duration-300 focus:outline-none focus:ring-2 focus:ring-gold-500 rounded px-2 py-1">Contact Us</a></li>
+                </ul>
+                <button id="mobile-menu-toggle" class="md:hidden focus:outline-none focus:ring-2 focus:ring-gold-500 rounded p-2 min-w-[44px] min-h-[44px] flex items-center justify-center" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+            <ul id="mobile-menu" class="hidden md:hidden mt-4 space-y-2 text-sm font-medium">
+                <li><a href="index.html" class="block py-2 hover:text-gold-500 transition">Home</a></li>
+                <li><a href="about.html" class="block py-2 hover:text-gold-500 transition">About Us</a></li>
+                <li><a href="products.html" class="block py-2 hover:text-gold-500 transition">Products</a></li>
+                <li><a href="milling.html" class="block py-2 hover:text-gold-500 transition">Milling & Processing</a></li>
+                <li><a href="packaging.html" class="block py-2 hover:text-gold-500 transition">Packaging & Export</a></li>
+                <li><a href="quality.html" class="block py-2 text-gold-500 font-bold transition" aria-current="page">Quality Assurance</a></li>
+                <li><a href="contact.html" class="block py-2 hover:text-gold-500 transition">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Page Header -->
+        <section class="py-16 bg-emerald-900 text-cream">
+            <div class="container mx-auto px-4">
+                <!-- Breadcrumb -->
+                <nav aria-label="Breadcrumb" class="mb-6">
+                    <ol class="flex items-center space-x-2 text-sm">
+                        <li>
+                            <a href="index.html" class="hover:text-gold-500 transition duration-300 focus:outline-none focus:ring-2 focus:ring-gold-500 rounded px-1">Home</a>
+                        </li>
+                        <li aria-hidden="true">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                        </li>
+                        <li aria-current="page" class="text-gold-500 font-semibold">Quality Assurance</li>
+                    </ol>
+                </nav>
+                
+                <!-- Page Title -->
+                <div class="text-center">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Quality Assurance</h1>
+                    <p class="text-lg md:text-xl max-w-3xl mx-auto">Uncompromising commitment to food safety and quality excellence at every step</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Food Safety Commitment -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 mb-6">Our Food Safety Commitment</h2>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                        At Zaviyar Enterprises, food safety is not just a requirement—it's our fundamental responsibility. We have implemented comprehensive quality management systems that ensure every grain of rice meets the highest international standards for safety, purity, and quality.
+                    </p>
+                    <div class="grid md:grid-cols-3 gap-6 mt-12">
+                        <div class="p-6">
+                            <div class="w-20 h-20 mx-auto mb-4 bg-gold-400 bg-opacity-20 rounded-full flex items-center justify-center">
+                                <svg class="w-10 h-10 text-emerald-900" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-emerald-900 mb-2">Zero Contamination</h3>
+                            <p class="text-gray-600 text-sm">Rigorous protocols prevent any physical, chemical, or biological contamination</p>
+                        </div>
+                        <div class="p-6">
+                            <div class="w-20 h-20 mx-auto mb-4 bg-gold-400 bg-opacity-20 rounded-full flex items-center justify-center">
+                                <svg class="w-10 h-10 text-emerald-900" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/>
+                                    <path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm9.707 5.707a1 1 0 00-1.414-1.414L9 12.586l-1.293-1.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-emerald-900 mb-2">Full Traceability</h3>
+                            <p class="text-gray-600 text-sm">Complete documentation from raw material sourcing to final delivery</p>
+                        </div>
+                        <div class="p-6">
+                            <div class="w-20 h-20 mx-auto mb-4 bg-gold-400 bg-opacity-20 rounded-full flex items-center justify-center">
+                                <svg class="w-10 h-10 text-emerald-900" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-emerald-900 mb-2">Continuous Improvement</h3>
+                            <p class="text-gray-600 text-sm">Regular audits and process optimization for enhanced quality</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Showcase -->
+        <section class="py-16 bg-cream">
+            <div class="container mx-auto px-4">
+                <div class="max-w-5xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 mb-8 text-center">International Certifications</h2>
+                    
+                    <div class="grid md:grid-cols-2 gap-8 items-center mb-12">
+                        <div class="order-2 md:order-1">
+                            <h3 class="text-2xl font-bold text-emerald-900 mb-6">Certified Excellence</h3>
+                            <p class="text-gray-700 mb-6 leading-relaxed">Our certifications demonstrate our commitment to maintaining the highest standards in food safety, quality management, and operational excellence. Each certification requires rigorous audits and continuous compliance.</p>
+                            
+                            <div class="space-y-4">
+                                <div class="flex items-start p-4 bg-white rounded-lg shadow-sm">
+                                    <div class="flex-shrink-0 w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mr-4">
+                                        <svg class="w-8 h-8 text-emerald-900" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-emerald-900 mb-1 text-lg">HACCP Certified</h4>
+                                        <p class="text-sm text-gray-600">Hazard Analysis and Critical Control Points certification ensuring systematic prevention of food safety hazards at every critical control point in our production process.</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start p-4 bg-white rounded-lg shadow-sm">
+                                    <div class="flex-shrink-0 w-16 h-16 bg-gold-400 bg-opacity-30 rounded-full flex items-center justify-center mr-4">
+                                        <svg class="w-8 h-8 text-emerald-900" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-emerald-900 mb-1 text-lg">ISO Certification</h4>
+                                        <p class="text-sm text-gray-600">International standard demonstrating our quality management system's effectiveness in consistently meeting customer and regulatory requirements through documented processes and procedures.</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start p-4 bg-white rounded-lg shadow-sm">
+                                    <div class="flex-shrink-0 w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mr-4">
+                                        <svg class="w-8 h-8 text-emerald-900" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/>
+                                            <path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-emerald-900 mb-1 text-lg">Food Safety Standards</h4>
+                                        <p class="text-sm text-gray-600">Full compliance with international food safety regulations including proper sanitation, hygiene practices, and documentation ensuring safe products for global markets.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="order-1 md:order-2">
+                            <img data-src="assets/images/quality-certifications.jpg" alt="Quality certifications display" class="lazy w-full h-auto rounded-lg shadow-xl bg-gray-200">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hygienic Processing -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-5xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 mb-8 text-center">Hygienic Processing Environment</h2>
+                    
+                    <div class="bg-emerald-100 p-8 rounded-lg mb-8">
+                        <p class="text-lg text-gray-700 text-center leading-relaxed">
+                            Our facility maintains the highest standards of cleanliness and hygiene throughout all processing areas. From controlled access zones to regular sanitation schedules, every aspect is designed to prevent contamination.
+                        </p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="bg-white p-6 rounded-lg shadow-md border-2 border-emerald-900">
+                            <h3 class="text-xl font-bold text-emerald-900 mb-4">Facility Controls</h3>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-gold-500 mr-2 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                    <span class="text-gray-700">Temperature-controlled processing and storage areas</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-gold-500 mr-2 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                    <span class="text-gray-700">HEPA filtration systems for air quality control</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-gold-500 mr-2 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                    <span class="text-gray-700">Restricted access with proper gowning procedures</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-gold-500 mr-2 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                    <span class="text-gray-700">Regular equipment sanitization and maintenance</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-gold-500 mr-2 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                    <span class="text-gray-700">Pest control monitoring and prevention programs</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-lg shadow-md border-2 border-gold-500">
+                            <h3 class="text-xl font-bold text-emerald-900 mb-4">Personnel Hygiene</h3>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-emerald-900 mr-2 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                    <span class="text-gray-700">Mandatory food safety training for all employees</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-emerald-900 mr-2 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                    <span class="text-gray-700">Protective clothing and hair nets in all areas</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-emerald-900 mr-2 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                    <span class="text-gray-700">Hand washing stations at all entry and exit points</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-emerald-900 mr-2 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                    <span class="text-gray-700">Regular health screenings and hygiene audits</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-emerald-900 mr-2 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                    <span class="text-gray-700">No jewelry, cosmetics, or personal items policy</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lab Testing Section -->
+        <section class="py-16 bg-cream">
+            <div class="container mx-auto px-4">
+                <div class="max-w-5xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-emerald-900 mb-8 text-center">Comprehensive Laboratory Testing</h2>
+                    
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <div>
+                            <img data-src="assets/images/quality-lab-testing.jpg" alt="Quality lab testing facility" class="lazy w-full h-auto rounded-lg shadow-xl bg-gray-200">
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-2xl font-bold text-emerald-900 mb-4">Advanced Testing Protocols</h3>
+                            <p class="text-gray-700 mb-6 leading-relaxed">Our state-of-the-art laboratory conducts comprehensive testing on every batch to ensure compliance with international quality standards. No product leaves our facility without passing rigorous quality checks.</p>
+                            
+                            <div class="space-y-4">
+                                <div class="bg-white p-4 rounded-lg shadow-sm">
+                                    <h4 class="font-bold text-emerald-900 mb-2">Physical Analysis</h4>
+                                    <p class="text-sm text-gray-600">Grain length, width, broken percentage, whiteness index, and color uniformity measurements</p>
+                                </div>
+                                
+                                <div class="bg-white p-4 rounded-lg shadow-sm">
+                                    <h4 class="font-bold text-emerald-900 mb-2">Chemical Testing</h4>
+                                    <p class="text-sm text-gray-600">Moisture content, protein levels, starch composition, and pesticide residue analysis</p>
+                                </div>
+                                
+                                <div class="bg-white p-4 rounded-lg shadow-sm">
+                                    <h4 class="font-bold text-emerald-900 mb-2">Microbiological Testing</h4>
+                                    <p class="text-sm text-gray-600">Bacterial count, mold detection, and pathogen screening for food safety compliance</p>
+                                </div>
+                                
+                                <div class="bg-white p-4 rounded-lg shadow-sm">
+                                    <h4 class="font-bold text-emerald-900 mb-2">Cooking Quality</h4>
+                                    <p class="text-sm text-gray-600">Elongation ratio, aroma retention, texture, and taste evaluation</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-12 bg-emerald-900 text-cream p-8 rounded-lg text-center">
+                        <h3 class="text-2xl font-bold mb-4">Quality Statistics</h3>
+                        <div class="grid grid-cols-3 gap-6">
+                            <div class="border-r border-gold-500">
+                                <div class="text-4xl font-bold text-gold-500 mb-2">100%</div>
+                                <p class="text-sm">Batches Tested</p>
+                            </div>
+                            <div class="border-r border-gold-500">
+                                <div class="text-4xl font-bold text-gold-500 mb-2">99.5%</div>
+                                <p class="text-sm">Avg. Purity Level</p>
+                            </div>
+                            <div>
+                                <div class="text-4xl font-bold text-gold-500 mb-2">15+</div>
+                                <p class="text-sm">Test Parameters</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="py-20 bg-emerald-900 text-cream">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Trust in Our Quality Commitment</h2>
+                <p class="text-lg mb-10 max-w-2xl mx-auto">Experience rice products backed by rigorous quality assurance and international certifications.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="products.html" class="inline-block px-10 py-4 bg-gold-500 text-charcoal font-bold text-lg rounded-lg shadow-lg hover:bg-gold-600 transition min-w-[200px]">View Products</a>
+                    <a href="contact.html" class="inline-block px-10 py-4 border-2 border-cream text-cream font-bold text-lg rounded-lg hover:bg-cream hover:text-emerald-900 transition min-w-[200px]">Contact Us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal text-cream py-12 mt-0" aria-label="Site footer">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <img src="assets/images/logo.svg" alt="Zaviyar Enterprises Logo" class="h-10 w-10">
+                        <span class="text-lg font-bold text-gold-500">Zaviyar Enterprises</span>
+                    </div>
+                    <p class="text-sm text-gray-400">Premium rice milling and export since 2008</p>
+                </div>
+                <div>
+                    <h3 class="text-gold-500 font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="hover:text-gold-500 transition">Home</a></li>
+                        <li><a href="about.html" class="hover:text-gold-500 transition">About Us</a></li>
+                        <li><a href="products.html" class="hover:text-gold-500 transition">Products</a></li>
+                        <li><a href="milling.html" class="hover:text-gold-500 transition">Milling & Processing</a></li>
+                        <li><a href="packaging.html" class="hover:text-gold-500 transition">Packaging & Export</a></li>
+                        <li><a href="quality.html" class="hover:text-gold-500 transition">Quality Assurance</a></li>
+                        <li><a href="contact.html" class="hover:text-gold-500 transition">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-gold-500 font-semibold mb-4">Get in Touch</h3>
+                    <p class="text-sm text-gray-400">Reach out to discuss your rice sourcing needs.</p>
+                    <a href="contact.html" class="inline-block mt-4 px-6 py-2 bg-gold-500 text-charcoal font-semibold rounded hover:bg-gold-600 transition min-h-[44px] flex items-center justify-center">Contact Us</a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-400">
+                <p>&copy; 2008 Zaviyar Enterprises. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/navigation.js" defer></script>
+    <script src="assets/js/lazy-load.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+</body>
+</html>

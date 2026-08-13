@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Component Test - Zaviyar Enterprises</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'emerald': {
+                            100: '#d1fae5',
+                            700: '#047857',
+                            800: '#065f46',
+                            900: '#064e3b',
+                        },
+                        'gold': {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        },
+                        'cream': '#faf9f6',
+                        'charcoal': '#1f2937',
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        main {
+            flex: 1;
+        }
+    </style>
+</head>
+<body class="bg-cream text-charcoal">
+    <main class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-emerald-900 mb-4">Footer Component Test</h1>
+        <p class="mb-4">This page tests the footer component implementation.</p>
+        
+        <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-xl font-semibold mb-4">Test Checklist</h2>
+            <ul class="space-y-2">
+                <li>✓ Brand section with logo and tagline</li>
+                <li>✓ Quick links to all 7 pages</li>
+                <li>✓ Contact info preview section</li>
+                <li>✓ Copyright notice (© 2008 Zaviyar Enterprises)</li>
+                <li>✓ Deep Emerald Green, Warm Gold, Cream, Dark Charcoal colors</li>
+                <li>✓ Responsive layout (mobile: single column, desktop: 3-column)</li>
+                <li>✓ Hover effects on links</li>
+            </ul>
+        </div>
+
+        <div class="bg-blue-50 border border-blue-200 p-4 rounded-lg mb-8">
+            <h3 class="font-semibold text-blue-900 mb-2">Responsive Testing Instructions:</h3>
+            <ol class="list-decimal list-inside space-y-1 text-sm">
+                <li>Resize browser to mobile width (&lt;768px) - should show single column</li>
+                <li>Resize to tablet width (768px-1024px) - should show 3-column grid</li>
+                <li>Resize to desktop width (&gt;1024px) - should show 3-column grid</li>
+                <li>Verify all links are clickable</li>
+                <li>Check hover effects on links (gold color transition)</li>
+                <li>Verify copyright year is 2008</li>
+            </ol>
+        </div>
+    </main>
+
+    <!-- Footer Component -->
+    <footer class="bg-charcoal text-cream py-12 mt-16" aria-label="Site footer">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Brand Section -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <img src="assets/images/logo.svg" alt="Zaviyar Enterprises Logo" class="h-10 w-10">
+                        <span class="text-lg font-bold text-gold-500">Zaviyar Enterprises</span>
+                    </div>
+                    <p class="text-sm text-gray-400">Premium rice milling and export since 2008</p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-gold-500 font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="hover:text-gold-500 transition">Home</a></li>
+                        <li><a href="about.html" class="hover:text-gold-500 transition">About Us</a></li>
+                        <li><a href="products.html" class="hover:text-gold-500 transition">Products</a></li>
+                        <li><a href="milling.html" class="hover:text-gold-500 transition">Milling & Processing</a></li>
+                        <li><a href="packaging.html" class="hover:text-gold-500 transition">Packaging & Export</a></li>
+                        <li><a href="quality.html" class="hover:text-gold-500 transition">Quality Assurance</a></li>
+                        <li><a href="contact.html" class="hover:text-gold-500 transition">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact CTA -->
+                <div>
+                    <h3 class="text-gold-500 font-semibold mb-4">Get in Touch</h3>
+                    <p class="text-sm text-gray-400">Reach out to discuss your rice sourcing needs.</p>
+                    <a href="contact.html" class="inline-block mt-4 px-6 py-2 bg-gold-500 text-charcoal font-semibold rounded hover:bg-gold-600 transition">Contact Us</a>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-400">
+                <p>&copy; 2008 Zaviyar Enterprises. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
