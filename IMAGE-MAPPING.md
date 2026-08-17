@@ -1,4 +1,4 @@
-# Image Mapping - Unsplash to Local Files
+# Image Mapping - Local Image Files
 
 ## HOME PAGE (index.html)
 1. Hero background: `hero-rice-field.jpg`
@@ -7,7 +7,8 @@
 4. IRRI-6 product card: `product-irri-6.jpg`
 
 ## ABOUT PAGE (about.html)
-1. Infrastructure image: `milling-facility-infrastructure.jpg`
+1. Infrastructure - Milling facility: `milling-facility-infrastructure.jpg`
+2. Infrastructure - Warehouse & Storage: `warehouse.jpg` ✨ NEW
 
 ## PRODUCTS PAGE (products.html)
 1. Super Kernel Basmati: `product-super-kernel.jpg`
@@ -34,6 +35,13 @@
 2. Lab testing: `quality-lab-testing.jpg`
 
 ## CONTACT PAGE (contact.html)
-1. Office/facility: `contact-facility.jpg`
+1. Facility entrance (Main Entrance): `contact-facility-02.jpg` ✨ NEW
+2. Facility overview (Production Facility): `contact-facility.jpg`
 
-Total images to replace: 23
+**Total images in use: 25**
+
+## ✨ Recent Updates:
+- Added `warehouse.jpg` to About page (Warehouse & Storage section)
+- Added `contact-facility-02.jpg` to Contact page (Main Entrance)
+- Kept `contact-facility.jpg` on Contact page (Production Facility)
+- Contact page now shows BOTH facility images with descriptive headings
